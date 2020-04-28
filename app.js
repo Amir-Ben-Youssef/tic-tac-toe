@@ -45,7 +45,6 @@ document.getElementById("reset").addEventListener('click', function(){
         var element = document.getElementById("mytable").rows
         var matrix = []
         var result =  false
-
     // construct the matrix
         for (let i = 0; i< element.length ; i++){ 
              var row = []
@@ -54,7 +53,6 @@ document.getElementById("reset").addEventListener('click', function(){
              }  
              matrix.push(row)         
         } 
- 
         for (let i = 0; i< matrix.length ; i++){ 
             // check for rows
             if ((matrix[i][0] ===  player) && (matrix[i][1]===  player) && (matrix[i][2]===  player)){
@@ -65,7 +63,6 @@ document.getElementById("reset").addEventListener('click', function(){
                  result = true
             }
         }
-
     // check for diagonals
         if ((matrix[0][0] ===  player) && (matrix[1][1]===  player) && (matrix[2][2] === player )){
                  result = true
@@ -73,12 +70,10 @@ document.getElementById("reset").addEventListener('click', function(){
         else if ((matrix[0][2] ===  player) && (matrix[1][1] ===  player) && (matrix[2][0]=== player )){
                  result = true
         }
-
     // check if the board is full
         else if (click === 9){
             gameover(player, true)
         }
-  
         if (result === true){
             gameover(player)
         }
@@ -96,12 +91,10 @@ document.getElementById("reset").addEventListener('click', function(){
                 score2++
                 document.getElementById("player2").innerHTML= score2
             }
-
         }
         else { // in case no one won
             alert ( ` Game Over !! \n no one won here :-) ` )
         }
-
         reset() // reset  the board
     }
 

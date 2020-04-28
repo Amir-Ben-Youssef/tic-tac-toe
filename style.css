@@ -6,7 +6,8 @@ body{
     width: 300px;
     height: 150px;
     border: 3px solid black;
-    font-size: 36px;
+    font-size: 100px;
+    border-radius: 5px;
   }
 
 
@@ -15,8 +16,28 @@ table{
     margin-right: auto;
     margin-top: 15px;
     margin-bottom: 15px;
+    
 }
 
 td:hover {
     background-color: aquamarine ;
+}
+
+#p1{
+    width: 50%;
+    float: left; 
+}
+#p2{
+    width: 50%;
+    float: right;    
+}
+.score{
+    width: 100%;
+}
+
+#p1name, #p2name{
+border: 2px solid aquamarine;
+border-radius: 15px;
+height: 1.5rem;
+padding: 5px;
 }
