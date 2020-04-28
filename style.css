@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+    background-color: rgb(234, 253, 255);
+}
+ td {
+    width: 300px;
+    height: 150px;
+    border: 3px solid black;
+    font-size: 36px;
+  }
+
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+td:hover {
+    background-color: aquamarine ;
+}
